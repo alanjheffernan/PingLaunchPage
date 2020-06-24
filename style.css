@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.launchText {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.launchText h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 15px;
+}
+
+.launchText strong {
+    color:black;
+}
+
+.launchText h4 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+form{
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.emailForm {
+    width: 70%;
+}
+
+.emailForm input,
+.emailForm button{
+    font-family: 'Libre Franklin';
+    font-weight: 300;
+    text-decoration: none;
+    border: 1px solid hsl(223, 100%, 88%);
+    font-size: 20px;
+    padding: 2%;
+    border-radius: 30px;
+}
+
+.emailForm input{
+    width: 60%;
+}
+
+.emailForm input::placeholder{
+    color: hsl(223, 100%, 88%);
+}
+
+.emailForm button {
+    width: 30%;
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    color: white;
+    box-shadow: 3px 10px 7px 3px hsla(223, 100%, 88%, 0.486);
+}
+
+.emailForm button:hover{
+    background-color: hsl(223, 88%, 54%);
+    color: white;
+    transition: ease 0.3s;
+}
+
+#error h6{
+    font-family: 'Libre Franklin';
+    font-weight: 300;
+    margin: 10px 0px 0px 5%;
+    color: red;
+}
+
+.mainImage{
+    display: flex;
+    justify-content: center;
+    margin: 75px 0px 75px 0px;
+}
+
+.mainImage img{
+    max-width:70%;
+    height: auto;
+}
+
+.social__bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+}
+
+.footer__social-circle{
+  height: 50px;
+  width: 50px;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social-item i{
+    color: hsl(223, 87%, 63%);
+    font-size: 20px;
+}
+
+.footer__social-circle:hover .footer__social-item i{
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    transition: ease 0.2s
+}
+
+.footer__social-circle:hover {
+    background-color: hsl(223, 87%, 63%);
+    transition: ease 0.2s;
+}
+
+.copyright{
+    height: 70px;
+}
+
+
+@media only screen and (max-width: 500px){
+
+
+    .launchText h2 {
+        font-size: 32px;
+    }
+
+    .emailForm input,
+.emailForm button{
+    font-size: 14px;
+}
+
+}
