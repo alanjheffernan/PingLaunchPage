@@ -8,33 +8,39 @@
         font-size: 16px;
     }
 
-    .emailForm{
+    form{
         width: 100%;
     }
 
-    form {
+    .emailSignUp{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        width: 100%;
     }
 
-    .emailForm input{
-        width: 90%;
-        padding: 3%;
-        margin-bottom: 10px;
+   .emailInput{
+       width: 90%;
+       margin-bottom: 15px;
+   }
+
+   #input{
+       width:95%;
+   }
+
+   #input::placeholder{
+    font-size: 14px;
+    color: hsl(223, 100%, 88%);
+    padding-left: 7%;
     }
 
-    .emailForm input::placeholder{
+    .emailSubmit{
+    width: 90%;
+    }
+
+    #formButton{
         font-size: 14px;
-        color: hsl(223, 100%, 88%);
-        padding-left: 7%;
-    }
-
-    .emailForm button{
-        width: 95%;
-        padding: 4%;
-        font-size: 16px;
+        padding: 3%;
     }
 
     .mainImage img{

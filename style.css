@@ -48,48 +48,48 @@ header {
 }
 
 form{
-    text-decoration: none;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.emailForm {
     width: 70%;
 }
 
-.emailForm input,
-.emailForm button{
+.emailSignUp{
+    display: flex;
+}
+
+.emailInput{
+    width: 60%;
+}
+
+#input,
+#formButton{
     font-family: 'Libre Franklin';
     font-weight: 300;
     text-decoration: none;
     border: 1px solid hsl(223, 100%, 88%);
     font-size: 20px;
-    padding: 2%;
     border-radius: 30px;
 }
 
-.emailForm input{
-    width: 60%;
+#input{
+    width: 100%;
+    padding: 3%;
 }
 
-.emailForm input::placeholder{
+#input::placeholder{
     color: hsl(223, 100%, 88%);
 }
 
-.emailForm button {
+.emailSubmit{
     width: 30%;
+}
+
+#formButton{
+    width: 100%;
     cursor: pointer;
+    padding: 6%;
     background-color: hsl(223, 87%, 63%);
     border: none;
     color: white;
     box-shadow: 3px 10px 7px 3px hsla(223, 100%, 88%, 0.486);
-}
-
-.emailForm button:hover{
-    background-color: hsl(223, 88%, 54%);
-    color: white;
-    transition: ease 0.3s;
 }
 
 #error h6{
@@ -155,9 +155,27 @@ form{
         font-size: 32px;
     }
 
-    .emailForm input,
-.emailForm button{
+    #formButton, #input{
     font-size: 14px;
+}
+
+.social__bar{
+    width : 50%;
+}
+
+.footer__social-circle{
+    height: 40px;
+    width: 40px;
+}
+
+.footer__social-item i{
+    font-size: 18px;
+}
+
+.copyright{
+    font-size: 12px;
+    height: 30px;
+    text-align: center;
 }
 
 }
